@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="onetrust" translate="label" class="onetrust" sortOrder="100">
+            <label>CookiePro</label>
+        </tab>
+        <section id="cookiepro" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Settings</label>
+            <tab>onetrust</tab>
+            <resource>Onetrust_CookiePro::cookiepro</resource>
+            <group id="general" translate="label" type="text" sortOrder="1000" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Configuration</label>
+                <field id="cookiepro_status" translate="label" type="select" sortOrder="1010" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable / Disable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="cookiepro_header" translate="label" type="textarea" sortOrder="1070" showInDefault="1"  showInWebsite="1" showInStore="1">
+                    <label>Insert the Main Script Tag from CookiePro here.</label>
+                    <validate>required-entry.</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

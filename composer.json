@@ -1,0 +1,27 @@
+{
+  "name": "cookiepro/cookiepro",
+  "description": "CookiePro allows to place an automatically generated cookie banner &amp; preference center script into the document head.",
+  "require": {
+    "php": "~5.5.0|~5.6.0|~7.0.0|7.0.2|7.0.4|~7.0.6|~7.1.0|~7.2.0|~7.3.0|~7.4.0"
+  },
+  "type": "magento2-module",
+  "version": "1.0.3",
+  "license": [
+    "GPL-2.0"
+  ],
+  "authors": [
+    {
+      "name": "OneTrust, Llc",
+      "email": "support@onetrust.com",
+      "homepage": "https://www.cookiepro.com/"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Onetrust\\CookiePro\\": ""
+    }
+  }
+}
